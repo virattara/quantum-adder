@@ -52,8 +52,7 @@ def classical_adder():
         p += CCNOT(c[i], b[i], c[i+1])
 
         ## SUM GATE ##
-        # Reverse the value of b
-        # set b[i] to 1 if a[1] is 1
+        # Get the original value of b
         p += CNOT(a[i], b[i])
 
         p += CNOT(c[i], b[i])
