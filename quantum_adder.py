@@ -116,7 +116,7 @@ def qft_adder():
     # Run a for loop on both the number's qubits
     for j in range(len(a), 0, -1):
         pw = 1
-        for i in range(len(b)-j, len(b)):
+        for i in range(len(a)-j, len(b)):
             div = np.power(2, pw)
             pw += 1
 
